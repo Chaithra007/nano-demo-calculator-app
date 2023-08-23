@@ -12,10 +12,10 @@ def add():
     if 'a' in data and 'b' in data:
         a = data['a']
         b = data['b']
-        result = a + b
+        result = b+a
         return jsonify({'result': result})
     else:
-        return jsonify({'error': 'Missing parameters'}), 400
+        return jsonify({'eror': 'Missing parameters'}), 400
 
 @app.route("/calculator/subtract", methods=['POST'])
 def subtract():
